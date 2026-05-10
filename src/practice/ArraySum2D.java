@@ -1,3 +1,5 @@
+package practice;
+
 public class ArraySum2D {
 
     public static void main(String[] args) {
