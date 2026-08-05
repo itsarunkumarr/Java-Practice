@@ -1,13 +1,17 @@
+package practice;
+
+import java.lang.String;
+
 public class Abstract {
 
     public static void main(String[] args){
 
-        Car c1 = new ElectricCar();
+        Car11 c1 = new ElectricCars();
         c1.start();
         c1.accelerate();
         c1.brake();
 
-        Car c2 = new FuelCar();
+        Car11 c2 = new FuelCars();
         c2.start();
         c2.accelerate();
         c2.brake();
@@ -15,16 +19,16 @@ public class Abstract {
     }
 }
 
-abstract class Car{
+abstract class Car11{
     void start(){
-        System.out.println("Car Started");
+        System.out.println("practice.Car Started");
     }
     abstract void accelerate();
 
     abstract void brake();
 }
 
-class FuelCar extends Car {
+class FuelCars extends Car11 {
 
     @Override
     void accelerate() {
@@ -37,7 +41,7 @@ class FuelCar extends Car {
     }
 }
 
-class ElectricCar extends Car{
+class ElectricCars extends Car11{
 
     @Override
     void accelerate(){
